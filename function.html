@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function livingInNorway(country) {
+            let isLivingInNorway = false;
+            if (country === 'norway') {
+                isLivingInNorway = true
+            } else {
+                isLivingInNorway = false
+            }
+            return isLivingInNorway
+        }
+        let land = 'norway'
+        let doesHeLiveInNorway = livingInNorway(land)
+
+        console.log('Lever i norge', doesHeLiveInNorway)   
+
+        function fullName(firstName, lastName) {
+            console.log(firstName + ' ' + lastName)
+        }
+
+        fullName('Glenn', 'Nytveit')
+
+        function getFullName(firstName, lastName) {
+            let fullNamePerson2 = firstName + ' ' + lastName
+            console.log('Denne trigger først')
+            return fullNamePerson2
+        }
+
+     
+
+
+        let fullNamePerson = getFullName('Tom', 'hansen')
+
+        console.log(fullNamePerson)
+    </script>
+</body>
+</html>

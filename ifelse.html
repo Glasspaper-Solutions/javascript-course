@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let name = 'Glenn'
+       let lastName;
+        let persons = ['trine', 'mustafa', 'inger']
+
+        let object = true;
+
+        console.log('object ', object)
+
+        if(object) {
+            console.log('Objektet er ikke tomt')
+        } else {
+            console.log('Objektet har verdi')
+        }
+
+       
+       if(name === 'Glenn') {
+           console.log('Hei på deg ' + name)
+           lastName = 'Nytveit'
+       } else {
+           console.log('Du var ikke Glenn')
+       }
+
+
+       if(lastName) {
+           console.log('Du heter ' + lastName + ' til etternavn')
+       } else {
+           console.log('Du har ikke noe etternavn')
+       }
+
+
+       let alder = 18
+
+       if(alder <= 18) {
+           console.log('Du er gammel nok til å kjøre bil')
+       } else {
+           console.log('Du er ikke gammel nok til å kjøre bil')
+       }
+
+       if(persons.length >  5) {
+           console.log('Det er for mange mennesker her, covid brudd, det er antall ' + persons.length)
+       } else {
+           console.log('Vi er innenfor covid regler ' + persons.length)
+       }
+
+    </script>
+</body>
+</html>
