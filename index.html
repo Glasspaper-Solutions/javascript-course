@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Velkommen til javascript</h1>
+    <script>
+        const firstName = "Tom";
+        const isItFridag = true;
+        const age = 30;
+        let dateNow;
+
+        let person = {
+            age: 14,
+            name: 'Tom',
+            adresse: {
+                street: 'Veien 1',
+                zipCode: 1459
+            }
+        };
+
+        let names = ['kåre', 'trine', 'bent']
+
+        let random = [1231, person, 'Veien 1']
+
+        console.log('random' + random[1].adresse.street)
+
+        console.log('navn: ' + names[2])
+
+        let lastName;
+
+        lastName = 'Nytveit'
+        console.log('Hei på dere, mitt navn er ' + firstName + ' ' + lastName + ', min alder er ' + age)
+        lastName = 'Hansen'
+        console.log('Hei på dere, mitt navn er ' + firstName + ' ' + lastName + age)
+
+        console.log('Person: ' + person.age + ' Addresse: ' + person.adresse.street)
+
+
+
+    </script>
+</body>
+</html>
