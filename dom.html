@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            color: red;
+        }
+        .blue {
+            color: blue;
+
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Velkommen til javascript</h1>
+    <p class="p1">Dette er en fin tekst</p>
+    <p id="para1" class="p1">Dette er en fin tekst</p>
+    <div id="textDiv">Dette er en tekst i en div</div>
+    <ul>
+        <li>Liste 1</li>
+        <li>Liste 2</li>
+    </ul>
+    <button id="btnChangeText">Endre tekst</button>
+    <button id="btnHideP">Skjul alle p elementer</button>
+    <button id="btnDeleteP">Slett p med id</button>
+    <script>
+        // Hente elemter fra dom og sette til en variabel
+        const para1 = document.getElementById('para1')
+        const btnChangeText = document.getElementById('btnChangeText')
+        const btnHideP = document.getElementById('btnHideP')
+        const allP = document.getElementsByTagName('p')
+        const textDiv = document.getElementById('textDiv')
+
+        // Legge til event listner på klikk
+        btnHideP.addEventListener('click', () => {
+            console.log(allP)
+            // Loope gjennom alle elementer med <p>
+            for (let p of allP) {
+                console.log(p.classList)
+                // Toggle klasse som skjuler og viser element
+                p.classList.toggle('hidden')
+            }
+        })
+
+        btnDeleteP.addEventListener('click', () => {
+            // Sletter dom elementet helt
+            para1.remove()
+        })
+
+        
+        
+
+        btnChangeText.addEventListener('click', () => {
+            para1.innerText = 'Her har jeg endret teksten'
+            textDiv.innerHTML += '<p style="background-color: red;">Dette er en rød tekst</p>'
+            const newDiv = document.createElement('div').innerText = 'Dette er en ny tekst'
+            textDiv.innerHTML += newDiv
+
+        })
+
+        // para1.innerText = ' Her kommer mer tekst' 
+        // console.log(para1.innerText)
+
+    </script>
+</body>
+</html>

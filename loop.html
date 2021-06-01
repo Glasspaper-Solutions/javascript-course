@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        alert('Skritet trigger først')
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script> 
+        alert('Skritet trigger andre')
+    </script>
+    <h1>Dette er en oversikt</h1>
+    <script src="/externalJs.js"></script>
+    <script>
+        let cars = ['fiat', 'volvo', 'tesla']
+
+        let persons = [
+            {
+                name: 'Trine',
+                age: 22
+            },
+            {
+                name: 'Hans',
+                age: 45
+            },
+            {
+                name: 'Mohammed',
+                age: 10
+            }
+        ]
+
+        for(let i = 0; i < persons.length; i++) {
+            let nameAge = persons[i].name + ' er ' + persons[i].age + ' år gammel'
+            console.log(nameAge)
+        }
+        
+        let car = {
+            hp: 140,
+            name: 'Tesla Roadster'
+        }
+
+
+        console.log(car['name'])
+        for (const detail in car) {
+            console.log(car[detail])
+        }
+
+        // Dette er ec6 funksjon ikke supportet i alle browsere ut av boksen
+        for( const person of persons) {
+            console.log(person)
+        }
+
+        // Dette er ec6 funksjon ikke supportet i alle browsere ut av boksen
+        persons.forEach((person) => console.log(person))
+
+        let i = 0;
+        while (i < 10) {
+            console.log(i)
+            i++
+        }
+
+        switch(expression) {
+            case 'norge':
+                // code block
+                break;
+            case 'sverige':
+                // code block
+                break;
+            default:
+                // code block
+}
+
+
+
+    </script>
+</body>
+</html>

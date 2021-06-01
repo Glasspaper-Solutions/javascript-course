@@ -48,8 +48,12 @@
 
        if(persons.length >  5) {
            console.log('Det er for mange mennesker her, covid brudd, det er antall ' + persons.length)
-       } else {
+       } else if (persons.length < 5){
            console.log('Vi er innenfor covid regler ' + persons.length)
+       } else if (persons.length < 15){
+           console.log('Vi er innenfor covid regler ' + persons.length)
+       }else {
+        console.log('Vi er ikke innenfor')
        }
 
     </script>
